@@ -1,21 +1,20 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package pkg3bi.first.java;
 
-/**
- *
- * @author sardi.riccardo
- */
+import java.util.Scanner;
+
 public class FirstJava {
 
-    /**
-     * @param args the command line arguments
-     */
+    public static Scanner in = new Scanner(System.in);
+
     public static void main(String[] args) {
-        // TODO code application logic here
+        int array1[] = new int[5];
+
+        for (int i = 0; i < 5; i++) {
+            array1[i] = (int) (Math.random() * 100);
+        }
+
+        for (int j = 0; j < 5; j++) {
+            System.out.print(array1[j] + " ");
+        }
     }
-    
 }
